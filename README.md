@@ -17,3 +17,13 @@ const d: string[] = ['Aibol', 'Zhanerke', 'Erlan', 'Azamat'];
 let e: any = 'Zhanerke';
 e = 21;
 ```
+# Типизация функций
+```
+function test(a: string): string | number {
+   return 'hello'
+}
+
+const test = (a: number): number => {
+   return a * 2
+}
+```

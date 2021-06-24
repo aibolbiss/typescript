@@ -12,7 +12,9 @@ let a: number = 42;
 let b: string = 'Aibol';
 let c: boolean = true;
 
-const d: string[] = ['Aibol', 'Zhanerke', 'Erlan', 'Azamat'];
+let d: string[] = ['Aibol', 'Zhanerke', 'Erlan', 'Azamat'];
+
+d = d.map((x: string) => x.toUpperCase())
 
 let e: any = 'Zhanerke';
 e = 21;
@@ -26,4 +28,17 @@ function test(a: string): string | number {
 const test = (a: number): number => {
    return a * 2
 }
+
+function test(a: string){
+   console.log(a.toUpperCase())
+}
+
+function test(a: string | number){
+   if(typeof a === 'string'){
+      ......
+   } else if(typeof a === 'number'){
+      ......
+   }
+}
+
 ```
